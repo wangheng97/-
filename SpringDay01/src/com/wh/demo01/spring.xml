@@ -1,0 +1,12 @@
+<beans>
+    <bean id="grayDispaly" class="com.wh.demo01.GrayDispaly">
+        <property name=""></property>
+    </bean>
+    <bean id="yingPan" class="com.wh.demo01.YingPan"> </bean>
+    <bean id="ypHigh" class="com.wh.demo01.YPHigh"> </bean>
+    <bean id="component" class="com.wh.demo01.Computer">
+        <property name="yingPan" ref="yingpan">
+        </property>
+        <property name="idisplay" ref="grayDispaly"> </property>
+    </bean>
+</beans>

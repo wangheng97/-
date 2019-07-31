@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.wh.pojo.StudentEntity" table="student" schema="db05">
+        <id name="sid"  >
+            <column name="sid" sql-type="int(10)"/>
+        </id>
+
+        <property name="sname" >
+            <column name="sname" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="birthday" >
+            <column name="birthday" sql-type="date(10)"/>
+        </property>
+        <property name="gendar" >
+            <column name="gendar" sql-type="varchar(2)" length="2"/>
+        </property>
+        <property name="phone" >
+            <column name="phone" sql-type="varchar(20)" length="20"/>
+        </property>
+        <many-to-one name="school" column="scid" class="com.wh.pojo.SchoolEntity" lazy="false" cascade="all"/>
+
+    </class>
+    <sql-query name="sql" >
+        <return alias="StudentEntity" class="com.wh.pojo.SchoolEntity"> </return>
+        select * from StudentEntity
+    </sql-query>
+    <query name="hql">
+        from  StudentEntity
+    </query>
+</hibernate-mapping>

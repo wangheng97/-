@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="name" class="com.wh.demo3.Person">
+        <property name="address" value="宝文理三号楼"> </property>
+        <property name="sex" value="男"> </property>
+        <property name="school" value="宝鸡文理学院"> </property>
+    </bean>
+    <!--继承模板-->
+    <bean id="student1" class="com.wh.demo3.Student" parent="name">
+        <property name="name" value="张哲"/>
+    </bean>
+    <bean id="student2" class="com.wh.demo3.Student" parent="name">
+        <property name="name" value="眼睛不好"/>
+    </bean>
+    <bean id="student3" class="com.wh.demo3.Student" parent="name">
+        <property name="name" value="肾结石"/>
+    </bean>
+</beans>

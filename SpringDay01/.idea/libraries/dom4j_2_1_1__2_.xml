@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="dom4j-2.1.1 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/dom4j-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-aop-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-aspects-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-beans-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-context-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-core-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-expression-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-instrument-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-jcl-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-jdbc-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-jms-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-messaging-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-orm-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-test-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-tx-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-web-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-webflux-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-webmvc-5.0.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Spring02/lib/spring-websocket-5.0.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--bean属性赋值(注入)方式：
+        setter ：两种形式<property>  p命名空间
+        构造器
+    -->
+
+    <bean id="colorIsk" class="com.wh.demo.ColorIsk">
+        <property name="brand">
+            <value>宝文理</value>
+        </property>
+    </bean>
+    <bean id="paper" class="com.wh.demo.A4Paper" p:width="300" p:heigth="400">
+
+    </bean>
+<!--    构造器方法赋值-->
+<bean id="isk" class="com.wh.demo.ColorIsk">
+    <constructor-arg>
+        <value>郭子</value>
+    </constructor-arg>
+</bean>
+    <!--自动装配
+     byType:通过类型查找要注入的bean。但是注意：当前上下文中只能有类型必须唯一
+     byName:通过属性名和bean的id进行匹配
+     constructor: 有参数的构造方法来注入
+     注意：
+     先按byName方式，构造器中参数名如果在上下文中匹配成功，则直接选择注入，
+     如果名字匹配不成功，然后再按类型进行匹配。
+     使用类似byType方式，会进行类型匹配
+    -->
+    <bean id="iterIsk" class="com.wh.demo.IterIsk" autowire="constructor"> </bean>
+</beans>

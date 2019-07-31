@@ -1,0 +1,13 @@
+<beans>
+    <bean id="grayDisplay" class="com.wh.demo1.GrayDisplay"> </bean>
+    <bean id="colorDisplay" class="com.wh.demo1.ColorDispaly">
+        <property name="brand" value="明基"> </property>
+    </bean>
+    <bean id="computer" class="com.wh.demo1.Computer">
+        <property name="disk" ref="highDisk"> </property>
+        <property name="display" ref="colorDisplay"> </property>
+    </bean>
+    <bean id="highDisk" class="com.wh.demo1.HighDisk">
+        <property name="size" value="500"> </property>
+    </bean>
+</beans>
